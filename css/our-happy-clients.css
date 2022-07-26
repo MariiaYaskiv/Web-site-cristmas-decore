@@ -1,0 +1,176 @@
+@media (min-width: 600px) {
+    header .our-happy-clients {
+        display: flex;
+    }
+}
+
+
+/** {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+
+.video {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px;
+    padding: 20px 20px 20px 20px;
+    background-size: cover;
+    background-position: right;
+    max-width: none;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.christmas-image-divider {
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    max-width: 150%;
+    word-wrap: break-word;
+}
+
+img a {
+    width: none;
+}
+
+.clock {
+    font-weight: 200;
+    font-size: 40px;
+    color: red;
+    margin: 10px50px 10px 30px;
+}
+
+.our-text {
+    background-color: var(--whitecolor);
+    margin: 50px 0px 0px 10px;
+    max-width: 500px;
+    padding: 50px 30px 50px 30px ;
+    z-index: 2;
+}
+
+#our-happy-clients {
+    background-color: var(--a-background);
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    #our-happy-clients {
+        padding: 5% 0% 5% 0%;
+    }
+    @media (min-width: 600px) {
+        .our-text {
+            padding: 5% 5 5% 5%;
+            margin: 0% 5% 0% 5%;
+}}}
+
+@media (min-width: 300px) {
+    .our-text {
+        margin: 8% 5% 8% 5%;
+    }
+}
+
+@media (min-width: 550px) {
+    .our-text {
+        margin: 5% 5% 5% 5%;
+        padding: 50px 0px 50px 30px;
+        
+}
+
+@media (min-width: 600px) {
+    .our-text {
+        margin: 7% 7% 7% 7%;
+    }
+}
+
+@media (min-width: 650px) {
+    .our-text {
+        margin: 7% 9% 7% 9%;
+    }
+}
+
+@media (min-width: 700px) {
+    .our-text {
+        margin: 7% 11% 7% 11%;
+    }
+}
+
+@media (min-width: 750px) {
+    .our-text {
+        margin: 6% 13% 6% 13%;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        
+    }
+    }
+}
+
+@media (min-width: 800px) {
+    .our-text {
+        margin: 3% 15% 4% 15%;
+        position: absolute;
+    }
+
+    #our-happy-clients {
+        max-height: 500px;
+
+    }
+}
+
+@media (min-width: 850px) {
+    .our-text {
+        margin: 4% 17% 4% 17%;
+    }
+}
+
+@media (min-width: 900px) {
+    .our-text {
+        margin: 6% 19% 0% 19%;
+    }
+
+    #our-happy-clients {
+        max-height: 600px;
+
+    }
+}
+
+@media (min-width: 950px) {
+    .our-text {
+        margin: 4% 21% 0% 21%;
+    }
+    .cta-text-large {
+        margin: 20px 0px 20px 0px;
+    }
+    .cta-text-small {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #our-happy-clients {
+        max-height: 700px;
+
+    }
+}

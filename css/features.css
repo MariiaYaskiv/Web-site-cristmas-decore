@@ -1,0 +1,92 @@
+/*NATALIA'S block-feature*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&family=Playfair+Display:wght@500&display=swap');
+
+main #features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding: 90px 24px 55px 24px;
+    text-align: justify;
+}
+
+.features-block {
+    margin-left: -15px; 
+    margin-right: -15px;
+    padding: 0px 25px 0px 25px;
+    margin-top: 50px;
+    
+}
+
+.features-icon-frame {
+    display: flex;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--features-icon-frame-color);
+    color: var(--features-icon-frame-color);
+    align-items: center;
+    justify-content: center;
+}
+
+main .features-icon {
+    width: 55%;
+    text-align: center;
+}
+
+.features-title-name {
+    font-size: 22px;
+    font-family: Playfair Display, serif;
+    font-weight: 500;
+    color: var(--features-title-color);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 32.64px;
+    text-align: start;
+}
+
+.dash {
+    display: block;
+    border-bottom: 3px var(--a-dash-color) solid;
+    width: 33px;
+}
+
+.features-text {
+    font-size: 16px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 400;
+    color: var(--features-text-color);
+    line-height: 25.6px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+
+@media (min-width: 751px) {
+    main #features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+}
+
+
+@media (min-width: 975px) {
+    main #features {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 110px 40px 55px 40px;
+    }
+}
+
+@media (min-width: 975px) {
+    .features-title-name {
+        display: flex;
+        flex-direction: column;
+    }
+  
+}

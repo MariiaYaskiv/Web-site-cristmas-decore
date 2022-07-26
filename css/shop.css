@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+:root {
+    --a-button: #bb2528;
+    --a-text-click: #4f4f4f;
+    --a-whitecolor: #FFFFFF;
+    --a-button-hover: #232323;
+}
+
+.shop {
+    padding: 10px;
+}
+
+h1 {
+    display: block;
+}
+
+section .button-sort-asc {
+    margin-bottom: 10px;
+}
+
+section .button-sort-desc {
+    margin-bottom: 10px;
+}
+
+section .shop-text-header {
+    padding-left: 10px;
+    color: black;
+    font-size: 52px;
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+section .shop-text {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: Playfair Display, serif;
+    margin-bottom: 5px;
+}
+
+section .shop-symbol {
+    margin-bottom: 5px;
+    width: 8%;
+}
+
+section .shop-text-click {
+    color: var(--a-text-click);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Fira Sans, serif;
+}
+
+section .shop-buttons {
+    color: var(--a-text-click);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Fira Sans, serif;
+    display: flex;
+}
+
+section .selected {
+    font-weight: 600;
+    color: #FF8585;
+}
+
+@media (min-width: 751px) {
+    .shop {
+        padding: 30px;
+    }
+
+    section .shop-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .shop {
+        padding: 40px;
+    }
+
+    section .shop-products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1335px) {
+
+    .shop {
+        padding: 100px;
+    }
+
+    .shop-text-header {
+        margin-left: 100px;
+    }
+
+    .shop-product-img {
+        height: 250px;
+    }
+}
+
+section .shop-product-name {
+    text-align: left;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 400;
+    color: var(--a-grey);
+}
+
+section .shop-product-name:hover {
+    color: var(--a-redcolor);
+    text-decoration: underline;
+}
+
+
+section .shop-product-price {
+    text-align: left;
+    font-size: 18px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 600;
+    color: var(--a-button);
+}
+
+section .shop-product-button {
+    border-radius: 7%;
+    width: 100px;
+    height: 25px;
+    border: none;
+    color: var(--a-whitecolor);
+    font-size: 12px;
+    padding: 10px;
+    background: var(--a-button);
+    box-shadow: 0px 4px 14px 0px rgb(12, 12, 12, 40%);
+    cursor: pointer;
+}
+
+section .shop-product-button:hover{
+    color: var(--a-whitecolor);
+    background: var(--a-button-hover);
+}
+
+section .shop-products {
+    margin-top: 15px;
+} 

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&family=Grand+Hotel&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+/*Natalia's block-bestsellers*/
+main #bestsellers {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#bestsellers a, #bestsellers ul {
+    text-decoration: none;
+}
+
+#bestsellers {
+    padding: 60px 24px 90px 24px;
+}
+
+.bestsellers-title {
+    display: grid;
+    text-align: left;
+}
+
+.bestsellers-title-name {
+    font-size: 22px;
+    font-family: Grand Hotel, undefined;
+    font-weight: 400;
+    color: var(--bestsellers-title-name-color);
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.bestsellers-big-text {
+    font-size: 42px;
+    font-family: Playfair Display, serif;
+    font-weight: 600;
+    color: var(--bestsellers-big-text-color);
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.bestsellers-symbol {
+    margin-top: 25px;
+    width: 115px;
+    height: 43px;
+    text-align: left;
+}
+
+.bestsellers-text {
+    font-size: 18px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 400;
+    color: var(--bestsellers-text-color);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.shop-bestsellers {
+    margin: 45px 0px 0px 0px;
+}
+
+.shop-bestsellers-products {
+    border-width: 2px;
+    border-color: var(--bestsellers-frame-color);
+    border-style: solid;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+}
+
+.shop-bestsellers-products-name {
+    font-size: 18px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 400;
+    color: var(--bestsellers-products-name-color);
+    margin-top: 8px;
+}
+
+.shop-bestsellers-products-name:hover {
+    color: var(--bestsellers-products-name-hover-color);
+}
+
+.shop-bestsellers-price {
+    font-size: 18px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 400;
+    color: var(--bestsellers-price-color);
+    margin-top: 16px;
+}
+
+.shop-bestsellers-button {
+    border-width: 2px;
+    border-radius: 0;
+    border-color: var(--bestseller-button-border-color);
+    border-style: solid;
+    text-align: center;
+    margin-top: 24px;
+    color: var(--bestsellers-button-text-color);
+    font-family: Fira Sans, sans-serif;
+    font-size: 10.8px;
+    font-weight: 700;
+    width: 120.219px;
+    height: 45px;
+    background-color: var(--bestseller-button-backgraund-color);
+}
+
+.shop-bestsellers-button:hover {
+    background-color: var(--bestsellers-button-background-hover-color);
+    color: var(--bestsellers-button-text-hover-color);
+}
+
+
+@media (min-width: 751px) {
+    main .shop-bestsellers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 958px) {
+    main .shop-bestsellers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+    .shop-bestsellers-products {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .bestsellers-symbol {
+        width: 147px;
+    }
+}
